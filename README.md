@@ -1,0 +1,2 @@
+# KappaCupwinter_Ogura_Brothers-_Shooting_1_Remake-_Invasion_of_the_Kassy_Empire
+河童杯ウィンターのやつ
