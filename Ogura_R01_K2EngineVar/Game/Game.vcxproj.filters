@@ -7,6 +7,15 @@
     <Filter Include="system\outgame">
       <UniqueIdentifier>{13de2808-42c6-45a3-ba7b-80b8b4f3545c}</UniqueIdentifier>
     </Filter>
+    <Filter Include="system\InGame">
+      <UniqueIdentifier>{9fdb99d7-b480-4d73-871f-66920b56af29}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="system\InGame\stage">
+      <UniqueIdentifier>{e5915f04-b4b1-4cf9-b17c-261abe16db28}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="system\InGame\Player">
+      <UniqueIdentifier>{cecbac44-ab7b-4992-b84d-2c38b3ad9bb6}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp" />
@@ -21,6 +30,12 @@
     <ClCompile Include="PlayerSerct.cpp">
       <Filter>system\outgame</Filter>
     </ClCompile>
+    <ClCompile Include="Stage1.cpp">
+      <Filter>system\InGame\stage</Filter>
+    </ClCompile>
+    <ClCompile Include="Noruto.cpp">
+      <Filter>system\InGame\Player</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="stdafx.h" />
@@ -33,6 +48,12 @@
     </ClInclude>
     <ClInclude Include="PlayerSerct.h">
       <Filter>system\outgame</Filter>
+    </ClInclude>
+    <ClInclude Include="Stage1.h">
+      <Filter>system\InGame\stage</Filter>
+    </ClInclude>
+    <ClInclude Include="Noruto.h">
+      <Filter>system\InGame\Player</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

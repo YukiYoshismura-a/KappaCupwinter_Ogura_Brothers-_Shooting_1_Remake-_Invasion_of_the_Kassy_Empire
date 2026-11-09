@@ -9,8 +9,8 @@ public:
 	void Update();
 
 private:
-	SpriteRender Noruto;
-	SpriteRender Ogurano;
+	SpriteRender S_Noruto;
+	SpriteRender S_Ogurano;
 
 	Vector3 m_pos;
 
