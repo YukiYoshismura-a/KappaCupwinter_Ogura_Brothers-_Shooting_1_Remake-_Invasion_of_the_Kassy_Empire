@@ -1,0 +1,15 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "c:\\users\\kbc-student\\desktop\\yoshimura\\kappacupwinter_ogura_brothers-_shooting_1_remake-_invasion_of_the_kassy_empire\\ogura_r01_k2enginevar\\k2engine\\graphics\\modelrender.h",
+        "ProvidedModule": "",
+        "Includes": [
+            "c:\\users\\kbc-student\\desktop\\yoshimura\\kappacupwinter_ogura_brothers-_shooting_1_remake-_invasion_of_the_kassy_empire\\ogura_r01_k2enginevar\\k2engine\\graphics\\myrenderer.h",
+            "c:\\users\\kbc-student\\desktop\\yoshimura\\kappacupwinter_ogura_brothers-_shooting_1_remake-_invasion_of_the_kassy_empire\\ogura_r01_k2enginevar\\k2enginelow\\geometry\\aabb.h",
+            "c:\\users\\kbc-student\\desktop\\yoshimura\\kappacupwinter_ogura_brothers-_shooting_1_remake-_invasion_of_the_kassy_empire\\ogura_r01_k2enginevar\\k2engine\\geometry\\geometrydata.h",
+            "c:\\users\\kbc-student\\desktop\\yoshimura\\kappacupwinter_ogura_brothers-_shooting_1_remake-_invasion_of_the_kassy_empire\\ogura_r01_k2enginevar\\k2enginelow\\graphics\\computeanimationvertexbuffer.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}
