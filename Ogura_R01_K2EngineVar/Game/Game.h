@@ -4,17 +4,24 @@
 
 class Player;
 
+
 class Game : public IGameObject
 {
 public:
-	Game() {}
-	~Game() {}
-	bool Start();
+	Game();
+	~Game();
+	
+
 	void Update();
 	void Render(RenderContext& rc);
 
 private:
-	ModelRender m_modelRender;
+	SpriteRender play;
+	SpriteRender info;
 	Vector3 m_pos;
+	
+	
+
+	int select = 0;
 };
 
