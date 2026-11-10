@@ -20,73 +20,75 @@
 
  PlayerSerct ::~PlayerSerct()
  {
-	 NewGO<Stage1>(0, "Stage1");
-	 NewGO<Noruto>(0, "Noruto");
-	 NewGO<GameCamera>(0, "GameCamera");
+	 
  }
 
  void PlayerSerct::Update()
-{
-	// g_renderingEngine->DisableRaytracing();
-	if (g_pad[0]->IsTrigger(enButtonRight) || g_pad[0]->GetLStickXF() > 0.01f)
-	{
-		select = 1;
-	}
-	else if (g_pad[0]->IsTrigger(enButtonLeft) || g_pad[0]->GetLStickXF() < -0.01f)
-	{
-		select = 0;
-	}
+ {
+	 // g_renderingEngine->DisableRaytracing();
+	 if (g_pad[0]->IsTrigger(enButtonRight) || g_pad[0]->GetLStickXF() > 0.01f)
+	 {
+		 select = 1;
+	 }
+	 else if (g_pad[0]->IsTrigger(enButtonLeft) || g_pad[0]->GetLStickXF() < -0.01f)
+	 {
+		 select = 0;
+	 }
 
-	if (select == 0)
-	{
-		S_Noruto.SetScale(Vector3(1.0f, 1.0f, 1.0f));
-		S_Noruto.SetMulColor(Vector4(1.0f, 1.0f, 1.0f, 1.0f));
+	 if (select == 0)
+	 {
+		 S_Noruto.SetScale(Vector3(1.0f, 1.0f, 1.0f));
+		 S_Noruto.SetMulColor(Vector4(1.0f, 1.0f, 1.0f, 1.0f));
 
-		S_Ogurano.SetScale(Vector3(0.7f, 0.7f, 1.0f));
-		S_Ogurano.SetMulColor(Vector4(1.0f, 1.0f, 1.0f, 0.5f));
-		
+		 S_Ogurano.SetScale(Vector3(0.7f, 0.7f, 1.0f));
+		 S_Ogurano.SetMulColor(Vector4(1.0f, 1.0f, 1.0f, 0.5f));
 
-		//ここでA押されたら、Player選ぶ画面に飛ぶ
-		if (g_pad[0]->IsTrigger(enButtonA))
-		{
-			
-			title* titleobje = FindGO<title>("title");
-			if (titleobje != nullptr)
-			{
-				DeleteGO(titleobje);
-			}
+		 // 乗留斗選択状態でAボタンが押されたとき
+		 if (g_pad[0]->IsTrigger(enButtonA))
+		 {
+			 title* titleobje = FindGO<title>("title");
+			 if (titleobje != nullptr)
+			 {
+				 DeleteGO(titleobje);
+			 }
 
-			DeleteGO(this);
-			return;
-		}
-		
-	}
-	else if(select == 1)
-	{
-		S_Ogurano.SetScale(Vector3(1.0f, 1.0f, 1.0f));
-		S_Ogurano.SetMulColor(Vector4(1.0f, 1.0f, 1.0f, 1.0f));
+			 NewGO<Stage1>(0, "Stage1");
+			 NewGO<Noruto>(0, "Noruto");
+			 NewGO<GameCamera>(0, "GameCamera");
 
-		S_Noruto.SetScale(Vector3(0.7f, 0.7f, 1.0f));
-		S_Noruto.SetMulColor(Vector4(1.0f, 1.0f, 1.0f, 0.5f));
+			 DeleteGO(this);
+			 return;
+		 }
+	 }
+	 else if (select == 1)
+	 {
+		 S_Ogurano.SetScale(Vector3(1.0f, 1.0f, 1.0f));
+		 S_Ogurano.SetMulColor(Vector4(1.0f, 1.0f, 1.0f, 1.0f));
 
-		if (g_pad[0]->IsTrigger(enButtonA))
-		{
-			
+		 S_Noruto.SetScale(Vector3(0.7f, 0.7f, 1.0f));
+		 S_Noruto.SetMulColor(Vector4(1.0f, 1.0f, 1.0f, 0.5f));
 
-			title* titleobje = FindGO<title>("title");
-			if (titleobje != nullptr)
-			{
-				DeleteGO(titleobje);
-			}
-			DeleteGO(this);
-			return;
-		}
-	}
+		 // 大倉野選択状態でAボタンが押されたとき
+		 if (g_pad[0]->IsTrigger(enButtonA))
+		 {
+			 title* titleobje = FindGO<title>("title");
+			 if (titleobje != nullptr)
+			 {
+				 DeleteGO(titleobje);
+			 }
 
-	S_Noruto.Update();
-	S_Ogurano.Update();
-}
+			 NewGO<Stage1>(0, "Stage1");
+			 NewGO<Noruto>(0, "Noruto");
+			 NewGO<GameCamera>(0, "GameCamera");
 
+			 DeleteGO(this);
+			 return;
+		 }
+	 }
+
+	 S_Noruto.Update();
+	 S_Ogurano.Update();
+ }
 
 void PlayerSerct::Render(RenderContext& rc)
 {

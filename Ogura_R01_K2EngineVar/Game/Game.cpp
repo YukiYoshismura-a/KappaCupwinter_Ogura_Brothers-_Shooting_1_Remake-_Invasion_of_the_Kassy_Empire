@@ -20,7 +20,7 @@ Game::Game()
 
 Game::~Game()
 {
-	NewGO<PlayerSerct>(0, "PlayerSelect");
+	//NewGO<PlayerSerct>(0, "PlayerSelect");
 }
 
 void Game::Update()
@@ -44,14 +44,9 @@ void Game::Update()
 		info.SetMulColor(Vector4(1.0f, 1.0f, 1.0f, 0.5f));
 		info.SetPosition(Vector3(550.0f, -300.0f, 0.0f));
 	
-		//ここでA押されたら、Player選ぶ画面に飛ぶ
-		if (g_pad[0]->IsTrigger(enButtonA))
-		{
-			DeleteGO(this);
-			return;
-		}
+		
 	}
-	else if (select == 1)
+	else
 	{
 		info.SetScale(Vector3(2.0f, 2.0f, 1.0f));
 		info.SetMulColor(Vector4(1.0f, 1.0f, 1.0f, 1.0f));
@@ -64,6 +59,20 @@ void Game::Update()
 	}
 	play.Update();
 	info.Update();
+
+	if (g_pad[0]->IsTrigger(enButtonA))
+	{
+		if (select == 0)
+		{
+			NewGO<PlayerSerct>(0, "playerselect");
+			DeleteGO(this);
+			return;
+		}
+		else
+		{
+			
+		}
+	}
 }
 
 void Game::Render(RenderContext& rc)

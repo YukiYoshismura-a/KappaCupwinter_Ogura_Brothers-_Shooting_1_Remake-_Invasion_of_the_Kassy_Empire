@@ -1,9 +1,9 @@
 #include "stdafx.h"
 #include "title.h"
-#include"PlayerSerct.h"
 
 title::title()
 {
+
 	m_spriteRender.Init("Assets/image/title.DDS",1920.0f,1080.0f);
 }
 
@@ -18,6 +18,8 @@ title::~title()
 
 void title::Update()
 {
+	
+
 	// g_renderingEngine->DisableRaytracing();
 	if (!m_isSelectung && g_pad[0]->IsTrigger(enButtonA))
 	{
@@ -25,7 +27,7 @@ void title::Update()
 
 		SetAlpha(0.5f);
 
-		//NewGO<PlayerSerct>(0, "playerSelect");
+		
 	}
 }
 void title::Render(RenderContext& rc)

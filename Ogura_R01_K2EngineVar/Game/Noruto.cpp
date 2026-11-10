@@ -6,7 +6,7 @@ Noruto::Noruto()
 {
 
 	m_modelRender.Init("Assets/modelData/Player/Noruto.tkm");
-	m_pos = Vector3(0.0f, 18.0f, 0.0f);
+	m_pos = Vector3(0.0f, 18.0f, -140.0f);
 	m_characterController.Init(3.0f, 200.0f, m_pos);
 	
 	m_modelRender.SetPosition(m_pos);
@@ -22,10 +22,8 @@ void Noruto::Update()
 	Move();
 	if (m_shootIntervalTimer > 0.0f)
 	{
-	
-
 			m_shootIntervalTimer -= g_gameTime->GetFrameDeltaTime();
-		
+	
 	}
 
 	if (g_pad[0]->IsPress(enButtonA)&&m_shootIntervalTimer<=0.0f)
@@ -34,10 +32,7 @@ void Noruto::Update()
 
 		m_shootIntervalTimer = 0.1f;
 	}
-	else
-	{
-		m_shootIntervalTimer = 0.0f;
-	}
+	
 	m_modelRender.Update();
 }
 
@@ -49,11 +44,25 @@ void Noruto::Move()
 	stickL.x = g_pad[0]->GetLStickXF();
 	stickL.y = g_pad[0]->GetLStickYF();
 
-	m_speed.x += stickL.x * 30.0f*3;
-	m_speed.z += stickL.y * 30.0f*3;
+	float stickLength = stickL.Length();
 
+	if (stickLength > 0.01f)
+	{
+		stickL.Normalize();
 
-	m_pos = m_characterController.Execute(m_speed, 1.0f/60.0f);
+		float moveSpeed = 30.0f * 3.0f * min(stickLength, 1.0f);
+		
+		m_speed.x = stickL.x * moveSpeed;
+		m_speed.z = stickL.y * moveSpeed;
+	}
+	float deltaTime = g_gameTime->GetFrameDeltaTime();
+
+	// 極端なフレーム落ちによるすり抜けを防ぐための保護（オプション）
+	if (deltaTime > 0.1f) {
+		deltaTime = 1.0f / 60.0f;
+	}
+
+	m_pos = m_characterController.Execute(m_speed, deltaTime );
 	m_modelRender.SetPosition(m_pos);
 }
 
