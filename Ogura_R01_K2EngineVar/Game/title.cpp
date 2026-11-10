@@ -25,7 +25,7 @@ void title::Update()
 
 		SetAlpha(0.5f);
 
-		NewGO<PlayerSerct>(0, "playerSelect");
+		//NewGO<PlayerSerct>(0, "playerSelect");
 	}
 }
 void title::Render(RenderContext& rc)

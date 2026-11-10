@@ -1,6 +1,7 @@
 #include "stdafx.h"
 #include "PlayerSerct.h"                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  
 #include"title.h"
+#include"GameCamera.h"
 #include "Stage1.h"
 #include"Noruto.h"
 
@@ -18,10 +19,11 @@
 }
 
  PlayerSerct ::~PlayerSerct()
-{
-	NewGO<Stage1>(0, "Stage1");
-	NewGO<Noruto>(0, "Noruto");
-}
+ {
+	 NewGO<Stage1>(0, "Stage1");
+	 NewGO<Noruto>(0, "Noruto");
+	 NewGO<GameCamera>(0, "GameCamera");
+ }
 
  void PlayerSerct::Update()
 {
@@ -53,6 +55,7 @@
 			{
 				DeleteGO(titleobje);
 			}
+
 			DeleteGO(this);
 			return;
 		}
@@ -68,20 +71,14 @@
 
 		if (g_pad[0]->IsTrigger(enButtonA))
 		{
-			if (g_pad[0]->IsTrigger(enButtonA))
+			
+
+			title* titleobje = FindGO<title>("title");
+			if (titleobje != nullptr)
 			{
-
-				title* titleobje = FindGO<title>("title");
-				if (titleobje != nullptr)
-				{
-					DeleteGO(titleobje);
-				}
-				DeleteGO(this);
-				return;
+				DeleteGO(titleobje);
 			}
-
 			DeleteGO(this);
-		
 			return;
 		}
 	}

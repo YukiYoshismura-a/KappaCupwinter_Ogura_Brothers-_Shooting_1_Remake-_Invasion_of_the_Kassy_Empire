@@ -23,7 +23,6 @@
     <ClCompile Include="system\system.cpp">
       <Filter>system</Filter>
     </ClCompile>
-    <ClCompile Include="Game.cpp" />
     <ClCompile Include="title.cpp">
       <Filter>system\outgame</Filter>
     </ClCompile>
@@ -36,13 +35,21 @@
     <ClCompile Include="Noruto.cpp">
       <Filter>system\InGame\Player</Filter>
     </ClCompile>
+    <ClCompile Include="GameCamera.cpp">
+      <Filter>system\InGame</Filter>
+    </ClCompile>
+    <ClCompile Include="Game.cpp">
+      <Filter>system\outgame</Filter>
+    </ClCompile>
+    <ClCompile Include="Norutodan.cpp">
+      <Filter>system\InGame</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="system\system.h">
       <Filter>system</Filter>
     </ClInclude>
-    <ClInclude Include="Game.h" />
     <ClInclude Include="title.h">
       <Filter>system\outgame</Filter>
     </ClInclude>
@@ -54,6 +61,15 @@
     </ClInclude>
     <ClInclude Include="Noruto.h">
       <Filter>system\InGame\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="Game.h">
+      <Filter>system\outgame</Filter>
+    </ClInclude>
+    <ClInclude Include="GameCamera.h">
+      <Filter>system\InGame</Filter>
+    </ClInclude>
+    <ClInclude Include="Norutodan.h">
+      <Filter>system\InGame</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

@@ -1,0 +1,11 @@
+#pragma once
+class GameCamera :public IGameObject
+{
+public:
+	GameCamera();
+	~GameCamera();
+	
+	void Update()override;
+	bool Start();
+};
+

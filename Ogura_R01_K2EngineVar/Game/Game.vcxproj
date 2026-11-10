@@ -224,8 +224,10 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Game.cpp" />
+    <ClCompile Include="GameCamera.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Noruto.cpp" />
+    <ClCompile Include="Norutodan.cpp" />
     <ClCompile Include="PlayerSerct.cpp" />
     <ClCompile Include="Stage1.cpp" />
     <ClCompile Include="stdafx.cpp">
@@ -238,7 +240,9 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Game.h" />
+    <ClInclude Include="GameCamera.h" />
     <ClInclude Include="Noruto.h" />
+    <ClInclude Include="Norutodan.h" />
     <ClInclude Include="PlayerSerct.h" />
     <ClInclude Include="Stage1.h" />
     <ClInclude Include="stdafx.h" />
