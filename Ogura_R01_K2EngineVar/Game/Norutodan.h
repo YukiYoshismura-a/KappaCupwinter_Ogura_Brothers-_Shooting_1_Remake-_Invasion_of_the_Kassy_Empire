@@ -25,6 +25,6 @@ private:
 	Vector3 m_pos = Vector3::Zero;
 
 	Vector3 m_moveDirection = Vector3::AxisZ;
-	float m_speed = 800.0f;
+	float m_speed = 300.0f;
 };
 

@@ -76,11 +76,7 @@ void Noruto::Shoot()
 
 	}
 
-	{
-		Vector3 dir = RotateVectorY(forward, 10.0f);
-		Norutodan* tama = NewGO<Norutodan>(0, "Norutodan");
-		tama->kakudo(dir);
-	}
+	
 	//右
 	{
 		Vector3 dir = RotateVectorY(forward, 10.0f);

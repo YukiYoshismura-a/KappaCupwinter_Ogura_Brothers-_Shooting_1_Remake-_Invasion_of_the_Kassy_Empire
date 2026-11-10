@@ -42,7 +42,7 @@
       <Filter>system\outgame</Filter>
     </ClCompile>
     <ClCompile Include="Norutodan.cpp">
-      <Filter>system\InGame</Filter>
+      <Filter>system\InGame\Player</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -69,7 +69,7 @@
       <Filter>system\InGame</Filter>
     </ClInclude>
     <ClInclude Include="Norutodan.h">
-      <Filter>system\InGame</Filter>
+      <Filter>system\InGame\Player</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

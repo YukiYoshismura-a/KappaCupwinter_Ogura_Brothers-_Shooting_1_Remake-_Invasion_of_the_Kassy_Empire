@@ -22,7 +22,7 @@ void Norutodan::Update()
 	m_modelRender.SetPosition(m_pos);
 	m_modelRender.Update();
 
-	if (m_pos.z > 200.0f)
+	if (m_pos.z > 180.0f)
 	{
 		DeleteGO(this);
 	}
