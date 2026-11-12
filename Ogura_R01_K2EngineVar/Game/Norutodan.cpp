@@ -1,5 +1,6 @@
 #include "stdafx.h"
 #include "Norutodan.h"
+#include"Yomogi.h"
 
 Norutodan::Norutodan()
 {
@@ -35,14 +36,29 @@ void Norutodan::Update()
         {
             DeleteGO(this);
         }
-        return; // 演出中は以降の移動計算を行わない
+        return; 
     }
 
     // 通常移動処理
     m_pos += m_moveDirection * m_speed * deltaTime;
     m_modelRender.SetPosition(m_pos);
    
+    Yomogi* yomogi = FindGO<Yomogi>("Yomogi1");
+    if (yomogi != nullptr)
+    {
+        Vector3 yomogiPos = yomogi->GetPosition();
+        Vector3 diff = m_pos - yomogiPos;
+        float distance = diff.Length();
 
+        if (distance < 30.0f)
+        {
+            // ヨモギーにダメージを与える（例：攻撃力6を与える）
+            yomogi->Damage(6);
+
+            // 弾自身は消滅演出へ
+            m_isDead = true;
+        }
+    }
     // ワールド座標Zの境界チェック（180を超えたら消滅演出スタート）
     if (m_pos.z >= 170.0f)
     {

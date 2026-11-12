@@ -35,7 +35,7 @@ void GameCamera::Update()
 	::g_camera3D->SetUp(Vector3::AxisZ);
 
 	// 近平面・遠平面の設定
-	::g_camera3D->SetNear(1.0f);
+	::g_camera3D->SetNear(1000.0f);
 	::g_camera3D->SetFar(10000.0f);
 
 	// ★画角（ViewAngle）を極限まで小さくする

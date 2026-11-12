@@ -16,6 +16,9 @@
     <Filter Include="system\InGame\Player">
       <UniqueIdentifier>{cecbac44-ab7b-4992-b84d-2c38b3ad9bb6}</UniqueIdentifier>
     </Filter>
+    <Filter Include="system\InGame\Enemy">
+      <UniqueIdentifier>{8cc78aeb-88b4-45fb-8562-f2c65680310a}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp" />
@@ -44,12 +47,18 @@
     <ClCompile Include="Norutodan.cpp">
       <Filter>system\InGame\Player</Filter>
     </ClCompile>
+    <ClCompile Include="BGMtitle.cpp">
+      <Filter>system\InGame</Filter>
+    </ClCompile>
+    <ClCompile Include="EnemyManager.cpp">
+      <Filter>system\InGame\Enemy</Filter>
+    </ClCompile>
+    <ClCompile Include="Yomogi.cpp">
+      <Filter>system\InGame\Enemy</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="stdafx.h" />
-    <ClInclude Include="system\system.h">
-      <Filter>system</Filter>
-    </ClInclude>
     <ClInclude Include="title.h">
       <Filter>system\outgame</Filter>
     </ClInclude>
@@ -70,6 +79,18 @@
     </ClInclude>
     <ClInclude Include="Norutodan.h">
       <Filter>system\InGame\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="system\system.h">
+      <Filter>system</Filter>
+    </ClInclude>
+    <ClInclude Include="BGMtitle.h">
+      <Filter>system\InGame</Filter>
+    </ClInclude>
+    <ClInclude Include="EnemyManager.h">
+      <Filter>system\InGame\Enemy</Filter>
+    </ClInclude>
+    <ClInclude Include="Yomogi.h">
+      <Filter>system\InGame\Enemy</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

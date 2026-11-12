@@ -63,6 +63,15 @@ void Noruto::Move()
 	}
 
 	m_pos = m_characterController.Execute(m_speed, deltaTime );
+	// 左右の制限
+	if (m_pos.x < -300.0f) { m_pos.x = -300.0f; }
+	if (m_pos.x > 300.0f) { m_pos.x = 300.0f; }
+	
+	//上下の制限
+	if (m_pos.z < -170.0f) { m_pos.z = -170.0f; }
+	if (m_pos.z > 170.0f) { m_pos.z = 170.0f; }
+	m_characterController.SetPosition(m_pos);
+
 	m_modelRender.SetPosition(m_pos);
 }
 

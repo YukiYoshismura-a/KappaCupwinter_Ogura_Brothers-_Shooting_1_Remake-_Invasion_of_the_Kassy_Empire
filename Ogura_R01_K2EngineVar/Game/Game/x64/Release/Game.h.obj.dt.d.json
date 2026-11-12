@@ -1,0 +1,13 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "c:\\users\\kbc-student\\desktop\\yoshimura\\kappacupwinter_ogura_brothers-_shooting_1_remake-_invasion_of_the_kassy_empire\\ogura_r01_k2enginevar\\game\\game.h",
+        "ProvidedModule": "",
+        "Includes": [
+            "c:\\users\\kbc-student\\desktop\\yoshimura\\kappacupwinter_ogura_brothers-_shooting_1_remake-_invasion_of_the_kassy_empire\\ogura_r01_k2enginevar\\k2engine\\level3drender\\levelrender.h",
+            "c:\\users\\kbc-student\\desktop\\yoshimura\\kappacupwinter_ogura_brothers-_shooting_1_remake-_invasion_of_the_kassy_empire\\ogura_r01_k2enginevar\\k2enginelow\\level3d\\tklfile.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}
