@@ -1,6 +1,7 @@
 #include "stdafx.h"
 #include "Norutodan.h"
 #include"Yomogi.h"
+#include"Sakuran.h"
 
 Norutodan::Norutodan()
 {
@@ -56,6 +57,17 @@ void Norutodan::Update()
             yomogi->Damage(6);
 
             // 弾自身は消滅演出へ
+            m_isDead = true;
+        }
+    }
+
+    Sakuran* sakuran = FindGO<Sakuran>("Sakuran1");
+    if (sakuran != nullptr)
+    {
+        Vector3 sakuranPos = sakuran->GetPosition();
+        if ((m_pos - sakuranPos).Length() < 30.0f)
+        {
+            sakuran->Damage(6); // サクランのダメージ関数を呼ぶ
             m_isDead = true;
         }
     }

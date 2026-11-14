@@ -56,6 +56,9 @@
     <ClCompile Include="Yomogi.cpp">
       <Filter>system\InGame\Enemy</Filter>
     </ClCompile>
+    <ClCompile Include="Sakuran.cpp">
+      <Filter>system\InGame\Enemy</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="stdafx.h" />
@@ -90,6 +93,9 @@
       <Filter>system\InGame\Enemy</Filter>
     </ClInclude>
     <ClInclude Include="Yomogi.h">
+      <Filter>system\InGame\Enemy</Filter>
+    </ClInclude>
+    <ClInclude Include="Sakuran.h">
       <Filter>system\InGame\Enemy</Filter>
     </ClInclude>
   </ItemGroup>

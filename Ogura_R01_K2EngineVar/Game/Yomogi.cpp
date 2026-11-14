@@ -75,15 +75,15 @@ void Yomogi::Move()
 		m_pos += dir * speed * deltaTime;
 	}
 
-	// 1. Y軸の向きは固定（Z+方向なら 0.0f。もし別方向を向かせたいなら角度を調整してな！）
+	// Y軸の向きは固定（Z+方向なら 0.0f。もし別方向を向かせたいなら角度を調整してな！）
 	Quaternion rotY;
 	rotY.SetRotationY(0.0f); // 0.0f でZ+方向を向く
 
-	// 2. 上を向かせるためのX軸の回転
+	// 上を向かせるためのX軸の回転
 	Quaternion rotX;
 	rotX.SetRotationX(-1.5f); // 上向きの角度
 
-	// 3. 合成してセット
+	// 合成してセット
 	Quaternion rot = rotY * rotX;
 	m_modelRender.SetRotation(rot);
 
@@ -95,7 +95,15 @@ void Yomogi::Move()
 
 void Yomogi::Damage(int pow)
 {
+	if (m_damageStopTime > 0.0f)
+	{
+		return;
+	}
+
+	// HPを減らす（確実に6ずつ減らしたい場合は固定値にするか、引数のpowを使う）
 	Y_HP -= pow;
+
+	// ダメージを受けたので、0.2秒間は次のダメージを受け付けない ＆ 移動を止める硬直を入れる
 	m_damageStopTime = 0.2f;
 }
 

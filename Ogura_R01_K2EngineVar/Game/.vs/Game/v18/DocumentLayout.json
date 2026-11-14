@@ -3,24 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\kbc-student\\Desktop\\yoshimura\\KappaCupwinter_Ogura_Brothers-_Shooting_1_Remake-_Invasion_of_the_Kassy_Empire\\Ogura_R01_K2EngineVar\\Game\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{282445E9-421F-46C0-9165-6C90D7C7EFC4}|Game.vcxproj|C:\\Users\\kbc-student\\Desktop\\yoshimura\\KappaCupwinter_Ogura_Brothers-_Shooting_1_Remake-_Invasion_of_the_Kassy_Empire\\Ogura_R01_K2EngineVar\\Game\\GameCamera.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{282445E9-421F-46C0-9165-6C90D7C7EFC4}|Game.vcxproj|solutionrelative:GameCamera.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{282445E9-421F-46C0-9165-6C90D7C7EFC4}|Game.vcxproj|C:\\Users\\kbc-student\\Desktop\\yoshimura\\KappaCupwinter_Ogura_Brothers-_Shooting_1_Remake-_Invasion_of_the_Kassy_Empire\\Ogura_R01_K2EngineVar\\Game\\Noruto.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{282445E9-421F-46C0-9165-6C90D7C7EFC4}|Game.vcxproj|solutionrelative:Noruto.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{282445E9-421F-46C0-9165-6C90D7C7EFC4}|Game.vcxproj|C:\\Users\\kbc-student\\Desktop\\yoshimura\\KappaCupwinter_Ogura_Brothers-_Shooting_1_Remake-_Invasion_of_the_Kassy_Empire\\Ogura_R01_K2EngineVar\\Game\\Sakuran.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{282445E9-421F-46C0-9165-6C90D7C7EFC4}|Game.vcxproj|solutionrelative:Sakuran.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{282445E9-421F-46C0-9165-6C90D7C7EFC4}|Game.vcxproj|C:\\Users\\kbc-student\\Desktop\\yoshimura\\KappaCupwinter_Ogura_Brothers-_Shooting_1_Remake-_Invasion_of_the_Kassy_Empire\\Ogura_R01_K2EngineVar\\Game\\Yomogi.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{282445E9-421F-46C0-9165-6C90D7C7EFC4}|Game.vcxproj|solutionrelative:Yomogi.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{282445E9-421F-46C0-9165-6C90D7C7EFC4}|Game.vcxproj|C:\\Users\\kbc-student\\Desktop\\yoshimura\\KappaCupwinter_Ogura_Brothers-_Shooting_1_Remake-_Invasion_of_the_Kassy_Empire\\Ogura_R01_K2EngineVar\\Game\\BGMtitle.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{282445E9-421F-46C0-9165-6C90D7C7EFC4}|Game.vcxproj|solutionrelative:BGMtitle.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{282445E9-421F-46C0-9165-6C90D7C7EFC4}|Game.vcxproj|C:\\Users\\kbc-student\\Desktop\\yoshimura\\KappaCupwinter_Ogura_Brothers-_Shooting_1_Remake-_Invasion_of_the_Kassy_Empire\\Ogura_R01_K2EngineVar\\Game\\Sakuran.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{282445E9-421F-46C0-9165-6C90D7C7EFC4}|Game.vcxproj|solutionrelative:Sakuran.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{282445E9-421F-46C0-9165-6C90D7C7EFC4}|Game.vcxproj|C:\\Users\\kbc-student\\Desktop\\yoshimura\\KappaCupwinter_Ogura_Brothers-_Shooting_1_Remake-_Invasion_of_the_Kassy_Empire\\Ogura_R01_K2EngineVar\\Game\\Norutodan.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{282445E9-421F-46C0-9165-6C90D7C7EFC4}|Game.vcxproj|solutionrelative:Norutodan.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{282445E9-421F-46C0-9165-6C90D7C7EFC4}|Game.vcxproj|C:\\Users\\kbc-student\\Desktop\\yoshimura\\KappaCupwinter_Ogura_Brothers-_Shooting_1_Remake-_Invasion_of_the_Kassy_Empire\\Ogura_R01_K2EngineVar\\Game\\Noruto.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{282445E9-421F-46C0-9165-6C90D7C7EFC4}|Game.vcxproj|solutionrelative:Noruto.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{282445E9-421F-46C0-9165-6C90D7C7EFC4}|Game.vcxproj|C:\\Users\\kbc-student\\Desktop\\yoshimura\\KappaCupwinter_Ogura_Brothers-_Shooting_1_Remake-_Invasion_of_the_Kassy_Empire\\Ogura_R01_K2EngineVar\\Game\\Yomogi.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -33,14 +33,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{282445E9-421F-46C0-9165-6C90D7C7EFC4}|Game.vcxproj|C:\\Users\\kbc-student\\Desktop\\yoshimura\\KappaCupwinter_Ogura_Brothers-_Shooting_1_Remake-_Invasion_of_the_Kassy_Empire\\Ogura_R01_K2EngineVar\\Game\\EnemyManager.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{282445E9-421F-46C0-9165-6C90D7C7EFC4}|Game.vcxproj|solutionrelative:EnemyManager.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{282445E9-421F-46C0-9165-6C90D7C7EFC4}|Game.vcxproj|C:\\Users\\kbc-student\\Desktop\\yoshimura\\KappaCupwinter_Ogura_Brothers-_Shooting_1_Remake-_Invasion_of_the_Kassy_Empire\\Ogura_R01_K2EngineVar\\Game\\Stage1.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{282445E9-421F-46C0-9165-6C90D7C7EFC4}|Game.vcxproj|solutionrelative:Stage1.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{282445E9-421F-46C0-9165-6C90D7C7EFC4}|Game.vcxproj|C:\\Users\\kbc-student\\Desktop\\yoshimura\\KappaCupwinter_Ogura_Brothers-_Shooting_1_Remake-_Invasion_of_the_Kassy_Empire\\Ogura_R01_K2EngineVar\\Game\\BGMtitle.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{282445E9-421F-46C0-9165-6C90D7C7EFC4}|Game.vcxproj|solutionrelative:BGMtitle.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{282445E9-421F-46C0-9165-6C90D7C7EFC4}|Game.vcxproj|C:\\Users\\kbc-student\\Desktop\\yoshimura\\KappaCupwinter_Ogura_Brothers-_Shooting_1_Remake-_Invasion_of_the_Kassy_Empire\\Ogura_R01_K2EngineVar\\Game\\Noruto.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -66,25 +58,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 13,
+          "SelectedChildIndex": 11,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "Noruto.cpp",
               "DocumentMoniker": "C:\\Users\\kbc-student\\Desktop\\yoshimura\\KappaCupwinter_Ogura_Brothers-_Shooting_1_Remake-_Invasion_of_the_Kassy_Empire\\Ogura_R01_K2EngineVar\\Game\\Noruto.cpp",
               "RelativeDocumentMoniker": "Noruto.cpp",
               "ToolTip": "C:\\Users\\kbc-student\\Desktop\\yoshimura\\KappaCupwinter_Ogura_Brothers-_Shooting_1_Remake-_Invasion_of_the_Kassy_Empire\\Ogura_R01_K2EngineVar\\Game\\Noruto.cpp",
               "RelativeToolTip": "Noruto.cpp",
-              "ViewState": "AgIAAHMAAAAAAAAAAAAkwHkAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2026-11-10T08:44:30.091Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 8,
               "Title": "Noruto.h",
               "DocumentMoniker": "C:\\Users\\kbc-student\\Desktop\\yoshimura\\KappaCupwinter_Ogura_Brothers-_Shooting_1_Remake-_Invasion_of_the_Kassy_Empire\\Ogura_R01_K2EngineVar\\Game\\Noruto.h",
               "RelativeDocumentMoniker": "Noruto.h",
@@ -97,20 +88,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
               "Title": "Norutodan.cpp",
               "DocumentMoniker": "C:\\Users\\kbc-student\\Desktop\\yoshimura\\KappaCupwinter_Ogura_Brothers-_Shooting_1_Remake-_Invasion_of_the_Kassy_Empire\\Ogura_R01_K2EngineVar\\Game\\Norutodan.cpp",
               "RelativeDocumentMoniker": "Norutodan.cpp",
               "ToolTip": "C:\\Users\\kbc-student\\Desktop\\yoshimura\\KappaCupwinter_Ogura_Brothers-_Shooting_1_Remake-_Invasion_of_the_Kassy_Empire\\Ogura_R01_K2EngineVar\\Game\\Norutodan.cpp",
               "RelativeToolTip": "Norutodan.cpp",
-              "ViewState": "AgIAACoAAAAAAAAAAAAAAB4AAAAHAAAAAAAAAA==",
+              "ViewState": "AgIAADcAAAAAAAAAAAAAAAMAAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2026-11-10T08:44:03.272Z",
               "IsPinned": true
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 9,
               "Title": "Norutodan.h",
               "DocumentMoniker": "C:\\Users\\kbc-student\\Desktop\\yoshimura\\KappaCupwinter_Ogura_Brothers-_Shooting_1_Remake-_Invasion_of_the_Kassy_Empire\\Ogura_R01_K2EngineVar\\Game\\Norutodan.h",
               "RelativeDocumentMoniker": "Norutodan.h",
@@ -123,7 +114,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 10,
               "Title": "PlayerSerct.cpp",
               "DocumentMoniker": "C:\\Users\\kbc-student\\Desktop\\yoshimura\\KappaCupwinter_Ogura_Brothers-_Shooting_1_Remake-_Invasion_of_the_Kassy_Empire\\Ogura_R01_K2EngineVar\\Game\\PlayerSerct.cpp",
               "RelativeDocumentMoniker": "PlayerSerct.cpp",
@@ -136,7 +127,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 11,
               "Title": "title.cpp",
               "DocumentMoniker": "C:\\Users\\kbc-student\\Desktop\\yoshimura\\KappaCupwinter_Ogura_Brothers-_Shooting_1_Remake-_Invasion_of_the_Kassy_Empire\\Ogura_R01_K2EngineVar\\Game\\title.cpp",
               "RelativeDocumentMoniker": "title.cpp",
@@ -145,45 +136,6 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAYwBUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2026-11-10T12:11:03.873Z",
-              "IsPinned": true
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "BGMtitle.h",
-              "DocumentMoniker": "C:\\Users\\kbc-student\\Desktop\\yoshimura\\KappaCupwinter_Ogura_Brothers-_Shooting_1_Remake-_Invasion_of_the_Kassy_Empire\\Ogura_R01_K2EngineVar\\Game\\BGMtitle.h",
-              "RelativeDocumentMoniker": "BGMtitle.h",
-              "ToolTip": "C:\\Users\\kbc-student\\Desktop\\yoshimura\\KappaCupwinter_Ogura_Brothers-_Shooting_1_Remake-_Invasion_of_the_Kassy_Empire\\Ogura_R01_K2EngineVar\\Game\\BGMtitle.h",
-              "RelativeToolTip": "BGMtitle.h",
-              "ViewState": "AgIAABIAAAAAAAAAAAAgwBcAAAAoAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2026-11-10T14:30:26.828Z",
-              "IsPinned": true
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "BGMtitle.cpp",
-              "DocumentMoniker": "C:\\Users\\kbc-student\\Desktop\\yoshimura\\KappaCupwinter_Ogura_Brothers-_Shooting_1_Remake-_Invasion_of_the_Kassy_Empire\\Ogura_R01_K2EngineVar\\Game\\BGMtitle.cpp",
-              "RelativeDocumentMoniker": "BGMtitle.cpp",
-              "ToolTip": "C:\\Users\\kbc-student\\Desktop\\yoshimura\\KappaCupwinter_Ogura_Brothers-_Shooting_1_Remake-_Invasion_of_the_Kassy_Empire\\Ogura_R01_K2EngineVar\\Game\\BGMtitle.cpp",
-              "RelativeToolTip": "BGMtitle.cpp",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAIAAAAZAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2026-11-10T14:32:20.299Z",
-              "IsPinned": true
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Stage1.cpp",
-              "DocumentMoniker": "C:\\Users\\kbc-student\\Desktop\\yoshimura\\KappaCupwinter_Ogura_Brothers-_Shooting_1_Remake-_Invasion_of_the_Kassy_Empire\\Ogura_R01_K2EngineVar\\Game\\Stage1.cpp",
-              "RelativeDocumentMoniker": "Stage1.cpp",
-              "ToolTip": "C:\\Users\\kbc-student\\Desktop\\yoshimura\\KappaCupwinter_Ogura_Brothers-_Shooting_1_Remake-_Invasion_of_the_Kassy_Empire\\Ogura_R01_K2EngineVar\\Game\\Stage1.cpp",
-              "RelativeToolTip": "Stage1.cpp",
-              "ViewState": "AgIAABUAAAAAAAAAAAAgwA8AAAApAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2026-11-10T12:26:11.268Z",
               "IsPinned": true
             },
             {
@@ -207,7 +159,7 @@
               "RelativeDocumentMoniker": "EnemyManager.cpp",
               "ToolTip": "C:\\Users\\kbc-student\\Desktop\\yoshimura\\KappaCupwinter_Ogura_Brothers-_Shooting_1_Remake-_Invasion_of_the_Kassy_Empire\\Ogura_R01_K2EngineVar\\Game\\EnemyManager.cpp",
               "RelativeToolTip": "EnemyManager.cpp",
-              "ViewState": "AgIAACYAAAAAAAAAAAAAwDwAAAADAAAAAAAAAA==",
+              "ViewState": "AgIAAFUAAAAAAAAAAAAAAAMAAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2026-11-11T06:36:09.101Z",
               "IsPinned": true
@@ -220,21 +172,20 @@
               "RelativeDocumentMoniker": "Yomogi.h",
               "ToolTip": "C:\\Users\\kbc-student\\Desktop\\yoshimura\\KappaCupwinter_Ogura_Brothers-_Shooting_1_Remake-_Invasion_of_the_Kassy_Empire\\Ogura_R01_K2EngineVar\\Game\\Yomogi.h",
               "RelativeToolTip": "Yomogi.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAOAAAAAAAAAA==",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAABcAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2026-11-11T07:39:23.005Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "Yomogi.cpp",
               "DocumentMoniker": "C:\\Users\\kbc-student\\Desktop\\yoshimura\\KappaCupwinter_Ogura_Brothers-_Shooting_1_Remake-_Invasion_of_the_Kassy_Empire\\Ogura_R01_K2EngineVar\\Game\\Yomogi.cpp",
               "RelativeDocumentMoniker": "Yomogi.cpp",
               "ToolTip": "C:\\Users\\kbc-student\\Desktop\\yoshimura\\KappaCupwinter_Ogura_Brothers-_Shooting_1_Remake-_Invasion_of_the_Kassy_Empire\\Ogura_R01_K2EngineVar\\Game\\Yomogi.cpp",
               "RelativeToolTip": "Yomogi.cpp",
-              "ViewState": "AgIAAF8AAAAAAAAAAAAAAGgAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAABkAAAAAAAAAAAAAAB4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2026-11-12T03:09:36.001Z",
               "IsPinned": true,
@@ -242,15 +193,29 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Sakuran.h",
+              "DocumentMoniker": "C:\\Users\\kbc-student\\Desktop\\yoshimura\\KappaCupwinter_Ogura_Brothers-_Shooting_1_Remake-_Invasion_of_the_Kassy_Empire\\Ogura_R01_K2EngineVar\\Game\\Sakuran.h",
+              "RelativeDocumentMoniker": "Sakuran.h",
+              "ToolTip": "C:\\Users\\kbc-student\\Desktop\\yoshimura\\KappaCupwinter_Ogura_Brothers-_Shooting_1_Remake-_Invasion_of_the_Kassy_Empire\\Ogura_R01_K2EngineVar\\Game\\Sakuran.h",
+              "RelativeToolTip": "Sakuran.h",
+              "ViewState": "AgIAABcAAAAAAAAAAAAowBgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-11-12T14:17:59.165Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "GameCamera.cpp",
-              "DocumentMoniker": "C:\\Users\\kbc-student\\Desktop\\yoshimura\\KappaCupwinter_Ogura_Brothers-_Shooting_1_Remake-_Invasion_of_the_Kassy_Empire\\Ogura_R01_K2EngineVar\\Game\\GameCamera.cpp",
-              "RelativeDocumentMoniker": "GameCamera.cpp",
-              "ToolTip": "C:\\Users\\kbc-student\\Desktop\\yoshimura\\KappaCupwinter_Ogura_Brothers-_Shooting_1_Remake-_Invasion_of_the_Kassy_Empire\\Ogura_R01_K2EngineVar\\Game\\GameCamera.cpp",
-              "RelativeToolTip": "GameCamera.cpp",
-              "ViewState": "AgIAACEAAAAAAAAAAAAAACYAAAAgAAAAAAAAAA==",
+              "Title": "Sakuran.cpp",
+              "DocumentMoniker": "C:\\Users\\kbc-student\\Desktop\\yoshimura\\KappaCupwinter_Ogura_Brothers-_Shooting_1_Remake-_Invasion_of_the_Kassy_Empire\\Ogura_R01_K2EngineVar\\Game\\Sakuran.cpp",
+              "RelativeDocumentMoniker": "Sakuran.cpp",
+              "ToolTip": "C:\\Users\\kbc-student\\Desktop\\yoshimura\\KappaCupwinter_Ogura_Brothers-_Shooting_1_Remake-_Invasion_of_the_Kassy_Empire\\Ogura_R01_K2EngineVar\\Game\\Sakuran.cpp",
+              "RelativeToolTip": "Sakuran.cpp",
+              "ViewState": "AgIAAEsAAAAAAAAAAAAAAD8AAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2026-11-12T06:15:04.049Z",
+              "WhenOpened": "2026-11-12T14:30:24.894Z",
+              "IsPinned": true,
               "EditorCaption": ""
             }
           ]

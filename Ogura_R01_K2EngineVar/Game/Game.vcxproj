@@ -234,6 +234,7 @@
     <ClCompile Include="Noruto.cpp" />
     <ClCompile Include="Norutodan.cpp" />
     <ClCompile Include="PlayerSerct.cpp" />
+    <ClCompile Include="Sakuran.cpp" />
     <ClCompile Include="Stage1.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
@@ -252,6 +253,7 @@
     <ClInclude Include="Noruto.h" />
     <ClInclude Include="Norutodan.h" />
     <ClInclude Include="PlayerSerct.h" />
+    <ClInclude Include="Sakuran.h" />
     <ClInclude Include="Stage1.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="system\system.h" />
