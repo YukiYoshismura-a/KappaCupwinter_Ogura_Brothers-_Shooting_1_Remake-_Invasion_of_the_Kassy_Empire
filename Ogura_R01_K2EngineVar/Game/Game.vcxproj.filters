@@ -19,6 +19,9 @@
     <Filter Include="system\InGame\Enemy">
       <UniqueIdentifier>{8cc78aeb-88b4-45fb-8562-f2c65680310a}</UniqueIdentifier>
     </Filter>
+    <Filter Include="system\InGame\UI">
+      <UniqueIdentifier>{deb24923-1d18-4636-b955-c6768230bbfb}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp" />
@@ -59,6 +62,9 @@
     <ClCompile Include="Sakuran.cpp">
       <Filter>system\InGame\Enemy</Filter>
     </ClCompile>
+    <ClCompile Include="socreUI.cpp">
+      <Filter>system\InGame\UI</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="stdafx.h" />
@@ -97,6 +103,9 @@
     </ClInclude>
     <ClInclude Include="Sakuran.h">
       <Filter>system\InGame\Enemy</Filter>
+    </ClInclude>
+    <ClInclude Include="socreUI.h">
+      <Filter>system\InGame\UI</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

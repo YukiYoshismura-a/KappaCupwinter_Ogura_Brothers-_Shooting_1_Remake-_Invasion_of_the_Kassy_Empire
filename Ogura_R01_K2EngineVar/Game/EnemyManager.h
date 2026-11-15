@@ -19,6 +19,7 @@ private:
 	float m_Timer = 0.0f;
 	bool m_isTitleFinished = false;
 	int m_spawnCount = 0;
+	int m_loopCount=0;
 
 	Yomogi* m_currentYomogi = nullptr;
 };

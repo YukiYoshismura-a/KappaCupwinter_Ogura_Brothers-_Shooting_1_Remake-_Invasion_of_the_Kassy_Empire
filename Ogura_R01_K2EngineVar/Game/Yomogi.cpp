@@ -1,9 +1,11 @@
 #include "stdafx.h"
 #include "Yomogi.h"
 #include "Noruto.h"
+#include"socreUI.h"
 
 Yomogi::Yomogi()
 {
+
 	m_modelRender.Init("Assets/modelData/enemy/yomogiy.tkm");
 
 	Y_HP = 20;
@@ -42,7 +44,7 @@ void Yomogi::Update()
 		Vector3 diff = m_pos - playerPos;
 		float distance = diff.Length();
 
-		if (distance < 30.0f && m_attacktimer <= 0.0f)
+		if (distance < 10.0f && m_attacktimer <= 0.0f)
 		{
 			player->Damage(10); // プレイヤーにダメージ
 			Damage(6);          // ヨモギー自身もダメージ＆硬直
@@ -53,6 +55,11 @@ void Yomogi::Update()
 	// 消滅用
 	if (Y_HP < 1)
 	{
+		socreUI* ui = FindGO<socreUI>("socreUI");
+		if (ui != nullptr)
+		{
+			ui->AddScore(plasPoint); // 持ってる plasPoint (100点) を加算！
+		}
 		DeleteGO(this);
 		return;
 	}

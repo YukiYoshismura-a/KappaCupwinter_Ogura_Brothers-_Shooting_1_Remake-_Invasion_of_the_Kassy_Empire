@@ -29,6 +29,5 @@ private:
 	int m_ATK = 6;
 	int m_HP = 600;
 
-	int sccor = 0;
 	float m_shootIntervalTimer = 0.0f;
 };

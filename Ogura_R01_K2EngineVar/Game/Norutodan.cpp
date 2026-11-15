@@ -44,30 +44,26 @@ void Norutodan::Update()
     m_pos += m_moveDirection * m_speed * deltaTime;
     m_modelRender.SetPosition(m_pos);
    
+    // ヨモギーとの判定
     Yomogi* yomogi = FindGO<Yomogi>("Yomogi1");
     if (yomogi != nullptr)
     {
         Vector3 yomogiPos = yomogi->GetPosition();
-        Vector3 diff = m_pos - yomogiPos;
-        float distance = diff.Length();
-
-        if (distance < 30.0f)
+        if ((m_pos - yomogiPos).Length() < 30.0f)
         {
-            // ヨモギーにダメージを与える（例：攻撃力6を与える）
             yomogi->Damage(6);
-
-            // 弾自身は消滅演出へ
             m_isDead = true;
         }
     }
 
+    // サクランとの判定
     Sakuran* sakuran = FindGO<Sakuran>("Sakuran1");
     if (sakuran != nullptr)
     {
         Vector3 sakuranPos = sakuran->GetPosition();
         if ((m_pos - sakuranPos).Length() < 30.0f)
         {
-            sakuran->Damage(6); // サクランのダメージ関数を呼ぶ
+            sakuran->Damage(6);
             m_isDead = true;
         }
     }

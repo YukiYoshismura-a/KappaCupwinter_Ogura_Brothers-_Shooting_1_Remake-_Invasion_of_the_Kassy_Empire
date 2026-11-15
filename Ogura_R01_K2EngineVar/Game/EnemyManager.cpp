@@ -2,9 +2,10 @@
 #include "EnemyManager.h"
 #include"Yomogi.h"
 #include"Sakuran.h"
-
+#include"socreUI.h"
 EnemyManager::EnemyManager()
 {
+	NewGO<socreUI>(0,"socreUI");
 	m_stageState = 0;
 	m_Timer = 0.0f;
 	m_spawnCount = 0;
@@ -96,25 +97,7 @@ void EnemyManager::Update()
 			}
 			break;
 
-		case 6: // 【サクラン】1体送る（待たずにすぐ次へ進む）
-		{
-			NewGO<Sakuran>(0, "Sakuran1"); // 出すだけ出す
-			m_Timer = 0.0f;
-			m_stageState = 7; // 0.5秒待ちフェーズへ直行
-			break;
-		}
-
-		case 7: // 0.5秒待つ
-			m_Timer += deltaTime;
-			if (m_Timer >= 0.5f)
-			{
-				m_Timer = 0.0f;
-				m_spawnCount = 0; // ヨモギー用のフラグとしてリセット
-				m_stageState = 8;
-			}
-			break;
-
-		case 8: // 【ヨモギー】1体出して、体力が0になる（消滅する）まで待つ
+		case 8: // 【ヨモギー】1体出して、倒されるまで待つ
 		{
 			Yomogi* existingYomogi = FindGO<Yomogi>("Yomogi1");
 
@@ -122,16 +105,28 @@ void EnemyManager::Update()
 			if (existingYomogi == nullptr && m_spawnCount == 0)
 			{
 				NewGO<Yomogi>(0, "Yomogi1");
-				m_spawnCount = 1; // 「すでに出した」という印
+				m_spawnCount = 1;
 			}
-			// 出し終わっていて、かつ画面からいなくなったらクリア！
+			// ヨモギーが倒されて画面からいなくなったら
 			else if (m_spawnCount == 1 && existingYomogi == nullptr)
 			{
-				m_stageState = 9; // ウェーブ完全クリア！
+				m_spawnCount = 0; // 次のためにリセット
+
+				// ★ 1セット完了！回数を1増やす
+
+				// 5回繰り返したかチェック
+				if (m_loopCount >= 5)
+				{
+					m_loopCount = 0;
+					m_stageState = 9; // 5回終わったら次のウェーブ（またはクリア）へ進む！
+				}
+				else
+				{
+					m_stageState = 6; // ★ まだ5回未満なら、もう一度サクラン（case 6）に戻る！
+				}
 			}
 			break;
 		}
-
 		default:
 			break;
 
