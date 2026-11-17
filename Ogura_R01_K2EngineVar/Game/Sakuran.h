@@ -13,7 +13,7 @@ public:
 	void Damage(int pow);
 	int GetHp() const { return Sa_HP; }
 	Vector3 GetPosition() const { return m_pos; }
-
+	void Init(float minX, float maxX);
 private:
 	ModelRender m_modelRender;
 

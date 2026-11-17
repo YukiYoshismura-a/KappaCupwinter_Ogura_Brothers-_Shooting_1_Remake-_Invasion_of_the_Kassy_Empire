@@ -22,6 +22,9 @@
     <Filter Include="system\InGame\UI">
       <UniqueIdentifier>{deb24923-1d18-4636-b955-c6768230bbfb}</UniqueIdentifier>
     </Filter>
+    <Filter Include="system\InGame\Enemy\cyuboss">
+      <UniqueIdentifier>{bfaaab76-004b-41ce-b98c-b6ab1f7165d8}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp" />
@@ -65,6 +68,17 @@
     <ClCompile Include="socreUI.cpp">
       <Filter>system\InGame\UI</Filter>
     </ClCompile>
+    <ClCompile Include="PlayerHPGage.cpp">
+      <Filter>system\InGame\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="H_1Boss.cpp">
+      <Filter>system\InGame\Enemy\cyuboss</Filter>
+    </ClCompile>
+    <ClCompile Include="H_1BossHPGage.cpp">
+      <Filter>system\InGame\Enemy\cyuboss</Filter>
+    </ClCompile>
+    <ClCompile Include="aclere.cpp" />
+    <ClCompile Include="gameover.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="stdafx.h" />
@@ -107,5 +121,16 @@
     <ClInclude Include="socreUI.h">
       <Filter>system\InGame\UI</Filter>
     </ClInclude>
+    <ClInclude Include="PlayerHPGage.h">
+      <Filter>system\InGame\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="H_1Boss.h">
+      <Filter>system\InGame\Enemy\cyuboss</Filter>
+    </ClInclude>
+    <ClInclude Include="H_1BossHPGage.h">
+      <Filter>system\InGame\Enemy\cyuboss</Filter>
+    </ClInclude>
+    <ClInclude Include="aclere.h" />
+    <ClInclude Include="gameover.h" />
   </ItemGroup>
 </Project>

@@ -1,12 +1,16 @@
 #include "stdafx.h"
 #include "title.h"
-
+#include"sound/SoundEngine.h"
 title::title()
 {
 
-	m_spriteRender.Init("Assets/image/title.DDS",1920.0f,1080.0f);
+	m_spriteRender.Init("Assets/image/title.DDS", 1920.0f, 1080.0f);
+	
+	g_soundEngine->ResistWaveFileBank(0,"Assets/sound/BGM/title.wav");
+	m_bgm = NewGO<SoundSource>(0);
+	m_bgm->Init(0);
+	m_bgm->Play(true);
 }
-
 void title::SetAlpha(float alpha)
 {
 	m_spriteRender.SetMulColor(Vector4(1.0f, 1.0f, 1.0f, alpha));
@@ -14,6 +18,10 @@ void title::SetAlpha(float alpha)
 
 title::~title()
 {
+	if (m_bgm != nullptr)
+	{
+		DeleteGO(m_bgm);
+	}
 }
 
 void title::Update()

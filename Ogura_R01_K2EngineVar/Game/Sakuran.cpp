@@ -1,7 +1,9 @@
 #include "stdafx.h"
 #include "Sakuran.h"
 #include "Noruto.h"
-#include"socreUI.h"
+#include "socreUI.h"
+#include "Norutodan.h"
+#include "gameover.h" // ★ ゲームオーバー検知用を追加！
 
 Sakuran::Sakuran()
 {
@@ -28,8 +30,26 @@ Sakuran::~Sakuran()
 {
 }
 
+void Sakuran::Init(float minX, float maxX)
+{
+	// minX 〜 maxX の間でランダムなX座標を計算する（★ マイナスを正しく修正！）
+	float range = maxX - minX;
+	float x = minX + (float)(rand() % (int)(range + 1));
+
+	m_pos = Vector3{ x, 20.0f, 180.0f }; // 一番上の奥のライン
+	m_modelRender.SetPosition(m_pos);
+	m_modelRender.Update();
+}
+
 void Sakuran::Update()
 {
+	// ★ ゲームオーバー画面がすでに生成されていたら、自分を消して処理を抜ける
+	if (FindGO<gameover>("gameover") != nullptr)
+	{
+		DeleteGO(this);
+		return;
+	}
+
 	float deltaTime = g_gameTime->GetFrameDeltaTime();
 
 	// 攻撃クールダウンのタイマーを進める
@@ -45,12 +65,12 @@ void Sakuran::Update()
 	}
 	else
 	{
-		// ヨモギーと同じように、硬直中でないときだけ Move() を呼ぶ！
+		// 硬直中でないときだけ Move() を呼ぶ！
 		Move();
 	}
 
 	// プレイヤーとの接触判定
-	Noruto* player = FindGO<Noruto>("Noruto");
+	Noruto* player = FindGO<Noruto>("Noruto"); // ★ 型名と変数名を正しく分離
 	if (player != nullptr)
 	{
 		Vector3 playerPos = player->GetPosition();
@@ -59,24 +79,22 @@ void Sakuran::Update()
 
 		if (distance < 30.0f)
 		{
-			// 1. プレイヤーへのダメージは1秒に1回に制限する
 			if (m_attacktimer <= 0.0f)
 			{
 				player->Damage(10);
 				m_attacktimer = 1.0f;
 			}
-
-			// 2. サクラン自身の硬直（Damage関数内の m_damageStopTime で0.2秒制限されるのでいつでも呼んでOK）
 			Damage(6);
 		}
 	}
+
 	// 消滅条件（体力 < 1 または 画面下端 Z < -173 を超えたら削除）
 	if (Sa_HP < 1 || m_pos.z < -173.0f)
 	{
-		socreUI* ui = FindGO<socreUI>("socreUI");
+		socreUI* ui = FindGO<socreUI>("socreUI"); // ★ 型名と変数名を正しく分離
 		if (ui != nullptr)
 		{
-			ui->AddScore(plasPoint); // 持ってる plasPoint (100点) を加算！
+			ui->AddScore(plasPoint); // スコアを加算！
 		}
 		DeleteGO(this);
 		return;

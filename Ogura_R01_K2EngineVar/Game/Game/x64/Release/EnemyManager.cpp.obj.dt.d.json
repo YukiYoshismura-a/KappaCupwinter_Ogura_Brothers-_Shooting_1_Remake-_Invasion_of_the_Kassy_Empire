@@ -678,7 +678,14 @@
             "c:\\users\\kbc-student\\desktop\\yoshimura\\kappacupwinter_ogura_brothers-_shooting_1_remake-_invasion_of_the_kassy_empire\\ogura_r01_k2enginevar\\game\\enemymanager.h",
             "c:\\users\\kbc-student\\desktop\\yoshimura\\kappacupwinter_ogura_brothers-_shooting_1_remake-_invasion_of_the_kassy_empire\\ogura_r01_k2enginevar\\game\\yomogi.h",
             "c:\\users\\kbc-student\\desktop\\yoshimura\\kappacupwinter_ogura_brothers-_shooting_1_remake-_invasion_of_the_kassy_empire\\ogura_r01_k2enginevar\\game\\sakuran.h",
-            "c:\\users\\kbc-student\\desktop\\yoshimura\\kappacupwinter_ogura_brothers-_shooting_1_remake-_invasion_of_the_kassy_empire\\ogura_r01_k2enginevar\\game\\socreui.h"
+            "c:\\users\\kbc-student\\desktop\\yoshimura\\kappacupwinter_ogura_brothers-_shooting_1_remake-_invasion_of_the_kassy_empire\\ogura_r01_k2enginevar\\game\\h_1boss.h",
+            "c:\\users\\kbc-student\\desktop\\yoshimura\\kappacupwinter_ogura_brothers-_shooting_1_remake-_invasion_of_the_kassy_empire\\ogura_r01_k2enginevar\\game\\socreui.h",
+            "c:\\users\\kbc-student\\desktop\\yoshimura\\kappacupwinter_ogura_brothers-_shooting_1_remake-_invasion_of_the_kassy_empire\\ogura_r01_k2enginevar\\game\\playerhpgage.h",
+            "c:\\users\\kbc-student\\desktop\\yoshimura\\kappacupwinter_ogura_brothers-_shooting_1_remake-_invasion_of_the_kassy_empire\\ogura_r01_k2enginevar\\game\\h_1bosshpgage.h",
+            "c:\\users\\kbc-student\\desktop\\yoshimura\\kappacupwinter_ogura_brothers-_shooting_1_remake-_invasion_of_the_kassy_empire\\ogura_r01_k2enginevar\\game\\aclere.h",
+            "c:\\users\\kbc-student\\desktop\\yoshimura\\kappacupwinter_ogura_brothers-_shooting_1_remake-_invasion_of_the_kassy_empire\\ogura_r01_k2enginevar\\game\\gameover.h",
+            "c:\\users\\kbc-student\\desktop\\yoshimura\\kappacupwinter_ogura_brothers-_shooting_1_remake-_invasion_of_the_kassy_empire\\ogura_r01_k2enginevar\\game\\stage1.h",
+            "c:\\users\\kbc-student\\desktop\\yoshimura\\kappacupwinter_ogura_brothers-_shooting_1_remake-_invasion_of_the_kassy_empire\\ogura_r01_k2enginevar\\game\\noruto.h"
         ],
         "ImportedModules": [],
         "ImportedHeaderUnits": []

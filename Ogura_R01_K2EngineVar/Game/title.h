@@ -1,4 +1,5 @@
 #pragma once
+#include"sound/SoundSource.h"
 class title :public IGameObject
 {
 public:
@@ -13,7 +14,7 @@ public:
 	
 	bool m_isSelectung = false;
 	SpriteRender m_spriteRender;
-
+	SoundSource* m_bgm;
 
 };
 

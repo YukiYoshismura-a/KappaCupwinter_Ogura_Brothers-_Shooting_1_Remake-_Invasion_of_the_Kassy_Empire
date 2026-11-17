@@ -1,30 +1,43 @@
 #include "stdafx.h"
-#include "PlayerSerct.h"                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  
+#include "PlayerSerct.h"
 #include"title.h"
 #include"GameCamera.h"
 #include "Stage1.h"
 #include"Noruto.h"
+#include "sound/SoundEngine.h"
+
+#include <cstdlib> // rand用
+#include <ctime>   // time用
 
  PlayerSerct ::PlayerSerct()
 {
+
+	 srand((unsigned int)time(nullptr));
+
 	S_Noruto.Init("Assets/image/Noruto.dds", 724.0f, 1020.0f);
 	//a晩完成したら変える
 	S_Ogurano.Init("Assets/image/Noruto.dds", 724.0f,1020.0f);
 
 	S_Noruto.SetPosition(Vector3(-550.0f, 0.0f, 0.0f));
 	S_Ogurano.SetPosition(Vector3(550.0f, 0.0f, 0.0f));
-
+	g_soundEngine->ResistWaveFileBank(3, "Assets/sound/SE/koremoiina.wav");
+	g_soundEngine->ResistWaveFileBank(4, "Assets/sound/SE/kocchinohouga.wav");
+	g_soundEngine->ResistWaveFileBank(5, "Assets/sound/SE/ittemiyo.wav");
 	S_Noruto.Update();
 	S_Ogurano.Update();
 }
 
  PlayerSerct ::~PlayerSerct()
  {
-	 
+	 SoundSource* se = NewGO<SoundSource>(0);
+	 se->Init(5);
+	 se->Play(false);
  }
 
  void PlayerSerct::Update()
  {
+
+	 int prevSelect = select;
 	 // g_renderingEngine->DisableRaytracing();
 	 if (g_pad[0]->IsTrigger(enButtonRight) || g_pad[0]->GetLStickXF() > 0.01f)
 	 {
@@ -33,6 +46,14 @@
 	 else if (g_pad[0]->IsTrigger(enButtonLeft) || g_pad[0]->GetLStickXF() < -0.01f)
 	 {
 		 select = 0;
+	 }
+	 if (select != prevSelect)
+	 {
+		 int soundId = (rand() % 2)+3;
+
+		 SoundSource* se = NewGO<SoundSource>(0);
+		 se->Init(soundId);
+		 se->Play(false); // 1回だけ再生
 	 }
 
 	 if (select == 0)
@@ -51,6 +72,7 @@
 			 {
 				 DeleteGO(titleobje);
 			 }
+			
 
 			 NewGO<Stage1>(0, "Stage1");
 			 NewGO<Noruto>(0, "Noruto");
@@ -76,7 +98,7 @@
 			 {
 				 DeleteGO(titleobje);
 			 }
-
+			
 			 NewGO<Stage1>(0, "Stage1");
 			 NewGO<Noruto>(0, "Noruto");
 			 NewGO<GameCamera>(0, "GameCamera");

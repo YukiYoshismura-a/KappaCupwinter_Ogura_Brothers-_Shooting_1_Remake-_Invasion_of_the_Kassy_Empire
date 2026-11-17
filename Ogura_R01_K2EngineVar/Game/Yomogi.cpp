@@ -1,19 +1,14 @@
 #include "stdafx.h"
 #include "Yomogi.h"
 #include "Noruto.h"
-#include"socreUI.h"
+#include "socreUI.h"
+#include "Norutodan.h"
+#include "gameover.h" // ★ ゲームオーバー検知用に追加！
 
 Yomogi::Yomogi()
 {
-
 	m_modelRender.Init("Assets/modelData/enemy/yomogiy.tkm");
-
 	Y_HP = 20;
-
-	float x = (float)(rand() % 446 - 223);
-	m_pos = Vector3{ x, 20.0f, 180.0f };
-	m_modelRender.SetPosition(m_pos);
-
 	m_modelRender.Update();
 }
 
@@ -21,8 +16,26 @@ Yomogi::~Yomogi()
 {
 }
 
+void Yomogi::Init(float minX, float maxX)
+{
+	// minX 〜 maxX の間でランダムなX座標を計算する（★ マイナスを正しく修正！）
+	float range = maxX - minX;
+	float x = minX + (float)(rand() % (int)(range + 1));
+
+	m_pos = Vector3{ x, 20.0f, 180.0f };
+	m_modelRender.SetPosition(m_pos);
+	m_modelRender.Update();
+}
+
 void Yomogi::Update()
 {
+	// ★ ゲームオーバー画面がすでに生成されていたら、自分を消して処理を抜ける
+	if (FindGO<gameover>("gameover") != nullptr)
+	{
+		DeleteGO(this);
+		return;
+	}
+
 	float deltaTime = g_gameTime->GetFrameDeltaTime();
 	if (m_attacktimer > 0.0f)
 	{
@@ -37,17 +50,18 @@ void Yomogi::Update()
 		Move();
 	}
 
-	Noruto* player = FindGO<Noruto>("Noruto");
+	// 1. プレイヤーとの距離判定
+	Noruto* player = FindGO<Noruto>("Noruto"); // ★ 型名と変数名を正しく分離
 	if (player != nullptr)
 	{
 		Vector3 playerPos = player->GetPosition();
 		Vector3 diff = m_pos - playerPos;
 		float distance = diff.Length();
 
-		if (distance < 10.0f && m_attacktimer <= 0.0f)
+		if (distance < 30.0f && m_attacktimer <= 0.0f)
 		{
-			player->Damage(10); // プレイヤーにダメージ
-			Damage(6);          // ヨモギー自身もダメージ＆硬直
+			player->Damage(10);
+			Damage(6);
 			m_attacktimer = 1.0f;
 		}
 	}
@@ -55,10 +69,10 @@ void Yomogi::Update()
 	// 消滅用
 	if (Y_HP < 1)
 	{
-		socreUI* ui = FindGO<socreUI>("socreUI");
+		socreUI* ui = FindGO<socreUI>("socreUI"); // ★ 型名と変数名を正しく分離
 		if (ui != nullptr)
 		{
-			ui->AddScore(plasPoint); // 持ってる plasPoint (100点) を加算！
+			ui->AddScore(plasPoint);
 		}
 		DeleteGO(this);
 		return;
@@ -70,7 +84,7 @@ void Yomogi::Move()
 {
 	float deltaTime = g_gameTime->GetFrameDeltaTime();
 
-	Noruto* player = FindGO<Noruto>("Noruto");
+	Noruto* player = FindGO<Noruto>("Noruto"); // ★ 型名と変数名を正しく分離
 	if (player != nullptr)
 	{
 		Vector3 playerPos = player->GetPosition();
@@ -82,19 +96,15 @@ void Yomogi::Move()
 		m_pos += dir * speed * deltaTime;
 	}
 
-	// Y軸の向きは固定（Z+方向なら 0.0f。もし別方向を向かせたいなら角度を調整してな！）
 	Quaternion rotY;
-	rotY.SetRotationY(0.0f); // 0.0f でZ+方向を向く
+	rotY.SetRotationY(0.0f);
 
-	// 上を向かせるためのX軸の回転
 	Quaternion rotX;
-	rotX.SetRotationX(-1.5f); // 上向きの角度
+	rotX.SetRotationX(-1.5f);
 
-	// 合成してセット
 	Quaternion rot = rotY * rotX;
 	m_modelRender.SetRotation(rot);
 
-	// 描画位置のY座標を少し浮かせて埋まりを防ぐ
 	Vector3 drawPos = m_pos;
 	drawPos.y += 20.0f;
 	m_modelRender.SetPosition(drawPos);
@@ -107,10 +117,7 @@ void Yomogi::Damage(int pow)
 		return;
 	}
 
-	// HPを減らす（確実に6ずつ減らしたい場合は固定値にするか、引数のpowを使う）
 	Y_HP -= pow;
-
-	// ダメージを受けたので、0.2秒間は次のダメージを受け付けない ＆ 移動を止める硬直を入れる
 	m_damageStopTime = 0.2f;
 }
 

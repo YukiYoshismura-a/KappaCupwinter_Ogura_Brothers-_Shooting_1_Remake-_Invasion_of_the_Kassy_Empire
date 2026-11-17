@@ -226,13 +226,18 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="aclere.cpp" />
     <ClCompile Include="BGMtitle.cpp" />
     <ClCompile Include="EnemyManager.cpp" />
     <ClCompile Include="Game.cpp" />
     <ClCompile Include="GameCamera.cpp" />
+    <ClCompile Include="gameover.cpp" />
+    <ClCompile Include="H_1Boss.cpp" />
+    <ClCompile Include="H_1BossHPGage.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Noruto.cpp" />
     <ClCompile Include="Norutodan.cpp" />
+    <ClCompile Include="PlayerHPGage.cpp" />
     <ClCompile Include="PlayerSerct.cpp" />
     <ClCompile Include="Sakuran.cpp" />
     <ClCompile Include="socreUI.cpp" />
@@ -247,12 +252,17 @@
     <ClCompile Include="Yomogi.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="aclere.h" />
     <ClInclude Include="BGMtitle.h" />
     <ClInclude Include="EnemyManager.h" />
     <ClInclude Include="Game.h" />
     <ClInclude Include="GameCamera.h" />
+    <ClInclude Include="gameover.h" />
+    <ClInclude Include="H_1Boss.h" />
+    <ClInclude Include="H_1BossHPGage.h" />
     <ClInclude Include="Noruto.h" />
     <ClInclude Include="Norutodan.h" />
+    <ClInclude Include="PlayerHPGage.h" />
     <ClInclude Include="PlayerSerct.h" />
     <ClInclude Include="Sakuran.h" />
     <ClInclude Include="socreUI.h" />

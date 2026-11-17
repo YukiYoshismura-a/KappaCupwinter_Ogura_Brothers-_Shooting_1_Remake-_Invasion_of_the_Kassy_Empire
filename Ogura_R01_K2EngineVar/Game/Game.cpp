@@ -1,6 +1,7 @@
 #include "stdafx.h"
 #include "Game.h"
 #include "PlayerSerct.h"
+#include "sound/SoundEngine.h" // ★ サウンドエンジン用
 
 Game::Game()
 {
@@ -16,6 +17,9 @@ Game::Game()
 
 	play.Update();
 	info.Update();
+
+	g_soundEngine->ResistWaveFileBank(1, "Assets/sound/SE/koreka.wav");
+	g_soundEngine->ResistWaveFileBank(2, "Assets/sound/SE/DEN.wav");
 }
 
 Game::~Game()
@@ -25,6 +29,7 @@ Game::~Game()
 
 void Game::Update()
 {
+	int prevSelect = select;
 	// g_renderingEngine->DisableRaytracing();
 	if (g_pad[0]->IsTrigger(enButtonUp) || g_pad[0]->GetLStickYF() > 0.01f)
 	{
@@ -34,7 +39,12 @@ void Game::Update()
 	{
 		select = 1;
 	}
-
+	if (select != prevSelect)
+	{
+		SoundSource* se = NewGO<SoundSource>(0);
+		se->Init(1); // バンクID 1 に登録した "koreka.wav" を初期化
+		se->Play(false); // ループなしで1回だけ再生
+	}
 	if (select == 0)
 	{
 		play.SetScale(Vector3(2.0f, 2.0f, 1.0f));
@@ -65,6 +75,9 @@ void Game::Update()
 		if (select == 0)
 		{
 			NewGO<PlayerSerct>(0, "playerselect");
+			SoundSource* se = NewGO<SoundSource>(0);
+			se->Init(2); 
+			se->Play(false);
 			DeleteGO(this);
 			return;
 		}

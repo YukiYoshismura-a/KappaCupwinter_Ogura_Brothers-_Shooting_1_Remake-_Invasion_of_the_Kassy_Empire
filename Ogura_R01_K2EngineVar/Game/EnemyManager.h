@@ -14,6 +14,8 @@ public:
 	{
 		m_isTitleFinished = true;
 	}
+
+	void SetState(int state) { m_stageState = state; }
 private:
 	int m_stageState = 0;
 	float m_Timer = 0.0f;
@@ -22,5 +24,6 @@ private:
 	int m_loopCount=0;
 
 	Yomogi* m_currentYomogi = nullptr;
+	
 };
 

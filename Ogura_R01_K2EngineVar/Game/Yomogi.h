@@ -13,6 +13,8 @@ public:
 
 	int GetHp() const { return Y_HP; }
 
+	void Init(float minX, float maxX);
+
 	Vector3 GetPosition() const { return m_pos; }
 private:
 	ModelRender m_modelRender;
